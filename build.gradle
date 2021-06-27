@@ -5,6 +5,7 @@ plugins {
 }
 
 apply plugin: "jacoco"
+apply plugin: "checkstyle"
 
 group = 'it.mistre'
 version = '0.0.1-SNAPSHOT'
@@ -31,5 +32,9 @@ jacocoTestCoverageVerification {
 			}
 		}
 	}
+}
+
+checkstyle {
+	checkstyleTest.enabled = false
 }
 
